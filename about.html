@@ -6,58 +6,129 @@
   <title>Document</title>
   <link rel="stylesheet" href="./style/style.css">
 </head>
-<body class=" bg-neutral-200">
+<body>
    <div class="custom-container">
-      <header>
-        <nav >
-          <div class=" flex items-center justify-between py-5">
-            <a href="./index.html"><img src="./images/logo.png" alt=""></a>
-          <ul class=" flex gap-7">
-            <li>
-              <a class=" text-lg hover:text-primary duration-300" href="./index.html">Home</a>
-            </li>
-            <li>
-              <a class=" text-lg hover:text-primary duration-300" href="./works.html">Work</a>
-            </li>
-            <li>
-              <a class=" text-primary font-bold text-lg hover:text-primary duration-300" href="./about.html">About</a>
-            </li>
-            <li>
-              <a class=" text-lg hover:text-primary duration-300" href="./contact.html">Contact</a>
-            </li>
-          </ul>
-          </div>
-        </nav>
-      </header>
+    <header>
+      <nav >
+        <div class=" flex items-center justify-between py-5 mb-20">
+          <a href="./index.html"><img src="./images/logo.png" alt=""></a>
+        <ul class=" flex gap-7">
+          <li class="max-sm:hidden">
+            <a class="  text-lg hover:text-primary duration-300" href="./index.html">Home</a>
+          </li>
+          <li class="max-sm:hidden">
+            <a class=" text-lg hover:text-primary duration-300 " href="./works.html">Work</a>
+          </li>
+          <li class="max-sm:hidden">
+            <a class=" text-primary font-bold text-lg hover:text-primary duration-300" href="./about.html">About</a>
+          </li>
+          <li class="max-sm:hidden">
+            <a class=" text-lg hover:text-primary duration-300" href="./contact.html">Contact</a>
+          </li>
+          <li class="border border-neutral-200 p-3 rounded-full flex flex-col gap-1 min-sm:hidden">
+            <div class="bg-neutral-700 h-0.5 w-4"></div>
+            <div class="bg-neutral-700 h-0.5 w-4"></div>
+            <div class="bg-neutral-700 h-0.5 w-4"></div>
+          </li>
+        </ul>
+        </div>
+      </nav>
+    </header>
 
-    <main>
-      about
-    </main>
-     
    </div>
 
+   <main>
+    <!-- who  -->
+     <div class="custom-container">
+      <section>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="bg-neutral-700 h-[3px] w-5 max-md:h-0.5 max-md:w-[14px]"></div>
+          <p class="text-neutral-700 text-2xl font-medium max-md:text-base">Who am I?</p>
+         </div>
+
+       <div class="min-md:w-[794px] mb-10">
+        <p class="font-bold text-[40px] text-neutral-900 mb-2 max-md:text-[20px]">Designing Thoughtful, Functional Products</p>
+       <p class="font-normal text-[18px] text-neutral-500 max-md:text-base">I’m a product designer based in Bangkok, blending creativity and problem-solving to create products that people love to use.</p>
+       </div>
+       </section>
+     </div>
+
+     <!-- picture  -->
+      <img class="h-100 w-full object-cover mb-10" src="./images/sun.png" alt="">
+
+      <div class="custom-container">
+        <!-- cards  -->
+         <section>
+          <div class="grid grid-cols-3 max-md:grid-cols-1 gap-5 mb-20">
+            <div class="p-8 border border-neutral-200 rounded-2xl flex flex-col gap-5">
+              <div class="flex items-center text-neutral-500 gap-5 "><svg width="32" height="32" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.49991 0.876892C3.84222 0.876892 0.877075 3.84204 0.877075 7.49972C0.877075 11.1574 3.84222 14.1226 7.49991 14.1226C11.1576 14.1226 14.1227 11.1574 14.1227 7.49972C14.1227 3.84204 11.1576 0.876892 7.49991 0.876892ZM1.82708 7.49972C1.82708 4.36671 4.36689 1.82689 7.49991 1.82689C10.6329 1.82689 13.1727 4.36671 13.1727 7.49972C13.1727 10.6327 10.6329 13.1726 7.49991 13.1726C4.36689 13.1726 1.82708 10.6327 1.82708 7.49972ZM5.03747 9.21395C4.87949 8.98746 4.56782 8.93193 4.34133 9.08991C4.11484 9.24789 4.05931 9.55956 4.21729 9.78605C4.93926 10.8211 6.14033 11.5 7.50004 11.5C8.85974 11.5 10.0608 10.8211 10.7828 9.78605C10.9408 9.55956 10.8852 9.24789 10.6587 9.08991C10.4323 8.93193 10.1206 8.98746 9.9626 9.21395C9.41963 9.99238 8.51907 10.5 7.50004 10.5C6.481 10.5 5.58044 9.99238 5.03747 9.21395ZM5.37503 6.84998C5.85828 6.84998 6.25003 6.45815 6.25003 5.97498C6.25003 5.4918 5.85828 5.09998 5.37503 5.09998C4.89179 5.09998 4.50003 5.4918 4.50003 5.97498C4.50003 6.45815 4.89179 6.84998 5.37503 6.84998ZM10.5 5.97498C10.5 6.45815 10.1083 6.84998 9.62503 6.84998C9.14179 6.84998 8.75003 6.45815 8.75003 5.97498C8.75003 5.4918 9.14179 5.09998 9.62503 5.09998C10.1083 5.09998 10.5 5.4918 10.5 5.97498Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+              <span class="text-2xl text-neutral-800 font-medium">143</span></div>
+              <p class="text-[18px] text-neutral-900 font-medium">Happy Clients</p>
+            </div>
+
+            <div class="p-8 border border-neutral-200 rounded-2xl flex flex-col gap-5 ">
+             <div class="text-neutral-500 flex gap-3">
+              <svg width="32" height="32" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+              <span class="text-2xl text-neutral-800 font-medium">42</span>
+             </div>
+             <p class="font-medium text-neutral-900 text-[18px]">Completed Projects</p>
+            </div>
+
+            <div class="p-8 border border-neutral-200 rounded-2xl flex flex-col gap-5 ">
+              <div class="text-neutral-500 flex gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet-icon lucide-wallet"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg>
+               <span class="text-2xl text-neutral-800 font-medium">88</span>
+              </div>
+              <p class="font-medium text-neutral-900 text-[18px]">Funds Raised</p>
+             </div>
+          </div>
+         </section>
+
+         <!-- contact -->
+          <section>
+            <div class="flex max-md:flex-col gap-5 justify-between items-start mb-25">
+              <div class="flex items-center gap-3">
+                <div class="bg-neutral-700 h-[3px] w-5 max-md:h-0.5 max-md:w-[14px]"></div>
+                <p class="text-neutral-700 text-2xl font-medium max-md:text-base">Contact Me</p>
+              </div>
+
+              <form class="w-[644px] max-md:w-full flex flex-col gap-5" action="">
+                <p class="text-neutral-700 font-normal text-2xl max-md:text-base">Send a Message</p>
+                <input class="py-2 px-3 border border-neutral-300 rounded-md w-full" type="text" placeholder="Name">
+                <input class="py-2 px-3 border border-neutral-300 rounded-md w-full" type="email" placeholder="Email">
+                <textarea class="border border-neutral-300 p-3 w-full rounded-md" rows="8" name="" id="" placeholder="Message"></textarea>
+                <button class="primary-btn rounded-md flex items-center justify-center gap-2">Send
+                  <svg width="16" height="16" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.20308 1.04312C1.00481 0.954998 0.772341 1.0048 0.627577 1.16641C0.482813 1.32802 0.458794 1.56455 0.568117 1.75196L3.92115 7.50002L0.568117 13.2481C0.458794 13.4355 0.482813 13.672 0.627577 13.8336C0.772341 13.9952 1.00481 14.045 1.20308 13.9569L14.7031 7.95693C14.8836 7.87668 15 7.69762 15 7.50002C15 7.30243 14.8836 7.12337 14.7031 7.04312L1.20308 1.04312ZM4.84553 7.10002L2.21234 2.586L13.2689 7.50002L2.21234 12.414L4.84552 7.90002H9C9.22092 7.90002 9.4 7.72094 9.4 7.50002C9.4 7.27911 9.22092 7.10002 9 7.10002H4.84553Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </button>
+              </form>
+            </div>
+          </section>
+      </div>
+    </main>
+   
+
    <footer>
-    <div class=" bg-neutral-50 border  py-10 px-20">
-     <div class="custom-container flex  justify-between items-start">
-      <div class="flex flex-col items-start gap-10">
+    <div class=" bg-neutral-50 py-10 px-20">
+     <div class="custom-container flex max-md:flex-col gap-10 justify-between items-start max-md:items-center">
+      <div class="flex flex-col items-start max-md:items-center gap-10">
         <img class="" src="./images/logo.png" alt="">
 
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-5 max-md:items-center">
           <p class=" text-neutral-500 text-sm">Contact</p>
           <p class=" text-sm">mms-it.com</p>
           <p class=" text-sm">+959250152018</p>
         </div>
       </div>
 
-      <div class="flex gap-20">
-        <div class="flex flex-col gap-4">
+      <div class="flex gap-20 max-md:flex-col max-md:gap-10 ">
+        <div class="flex flex-col gap-4 max-md:items-center">
           <p class="text-neutral-500 text-sm">Pages</p>
           <p class=" text-sm">Home</p>
           <p class=" text-sm">Works</p>
           <p class=" text-sm">About</p>
           <p class=" text-sm">Contact</p>
         </div>
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 max-md:items-center">
           <p class="text-neutral-500 text-sm">Social</p>
           <p class=" text-sm">Instagram</p>
           <p class=" text-sm">Dribble</p>

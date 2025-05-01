@@ -6,58 +6,134 @@
   <title>Document</title>
   <link rel="stylesheet" href="./style/style.css">
 </head>
-<body class=" bg-neutral-200">
+<body >
    <div class="custom-container">
-      <header>
-        <nav >
-          <div class=" flex items-center justify-between py-5">
-            <a href="./index.html"><img src="./images/logo.png" alt=""></a>
-          <ul class=" flex gap-7">
-            <li>
-              <a class=" text-lg hover:text-primary duration-300" href="./index.html">Home</a>
-            </li>
-            <li>
-              <a class=" text-primary font-bold text-lg hover:text-primary duration-300" href="./works.html">Work</a>
-            </li>
-            <li>
-              <a class=" text-lg hover:text-primary duration-300" href="./about.html">About</a>
-            </li>
-            <li>
-              <a class=" text-lg hover:text-primary duration-300" href="./contact.html">Contact</a>
-            </li>
-          </ul>
-          </div>
-        </nav>
-      </header>
+    <header>
+      <nav >
+        <div class=" flex items-center justify-between py-5 mb-20">
+          <a href="./index.html"><img src="./images/logo.png" alt=""></a>
+        <ul class=" flex gap-7">
+          <li class="max-sm:hidden">
+            <a class=" text-lg hover:text-primary duration-300" href="./index.html">Home</a>
+          </li>
+          <li class="max-sm:hidden">
+            <a class=" text-primary font-bold text-lg hover:text-primary duration-300 " href="./works.html">Work</a>
+          </li>
+          <li class="max-sm:hidden">
+            <a class=" text-lg hover:text-primary duration-300" href="./about.html">About</a>
+          </li>
+          <li class="max-sm:hidden">
+            <a class=" text-lg hover:text-primary duration-300" href="./contact.html">Contact</a>
+          </li>
+          <li class="border border-neutral-200 p-3 rounded-full flex flex-col gap-1 min-sm:hidden">
+            <div class="bg-neutral-700 h-0.5 w-4"></div>
+            <div class="bg-neutral-700 h-0.5 w-4"></div>
+            <div class="bg-neutral-700 h-0.5 w-4"></div>
+          </li>
+        </ul>
+        </div>
+      </nav>
+    </header>
 
     <main>
-      works
+      <!-- all works  -->
+      <section>
+        <div class="mb-10 flex items-center gap-3">
+          <div class="bg-neutral-700 h-[3px] w-5 max-sm:w-[16px] max-sm:h-0.5"></div>
+          <p class="font-medium text-2xl max-sm:text-[16px] text-neutral-700">All Works</p>
+        </div>
+
+        <!-- cards  -->
+        <div class="grid grid-cols-3 gap-5 mb-10 max-md:grid-cols-1">
+          <div>
+            <img class=" h-[370px] object-cover rounded-2xl mb-3" src="./images/fresh.png" alt="">
+            <p class="text-neutral-900 font-semibold ">FreshCart UI</p>
+            <p class="text-neutral-500 font-normal">FreshCart (Grocery Delivery)</p>
+          </div>
+
+          <div>
+            <img class=" h-[370px] object-cover rounded-2xl mb-3" src="./images/bloom.png" alt="">
+            <p class="text-neutral-900 font-semibold ">BloomBank App</p>
+            <p class="text-neutral-500 font-normal">BloomBank (Digital Banking)</p>
+          </div>
+
+          <div>
+            <img class=" h-[370px] object-cover rounded-2xl mb-3" src="./images/nutri.png" alt="">
+            <p class="text-neutral-900 font-semibold ">NutriTrack Dashboard</p>
+            <p class="text-neutral-500 font-normal">NutriTrack (Health & Nutrition Analytics)</p>
+          </div>
+
+        </div>
+
+        <div class="grid grid-cols-3 gap-5 mb-10 max-md:grid-cols-1">
+          <div>
+            <img class=" h-[370px] object-cover rounded-2xl mb-3" src="./images/volt.png" alt="">
+            <p class="text-neutral-900 font-semibold ">VoltCharge eCommerce</p>
+            <p class="text-neutral-500 font-normal">VoltCharge (Tech Gadgets Store)</p>
+          </div>
+
+          <div>
+            <img class=" h-[370px] object-cover rounded-2xl mb-3" src="./images/luxe.png" alt="">
+            <p class="text-neutral-900 font-semibold ">LuxeTime Watch Configurator</p>
+            <p class="text-neutral-500 font-normal">LuxeTime (Luxury Watches)</p>
+          </div>
+
+          <div>
+            <img class=" h-[370px] object-cover rounded-2xl mb-3" src="./images/auto.png" alt="">
+            <p class="text-neutral-900 font-semibold ">AutoLens Car Marketplace</p>
+            <p class="text-neutral-500 font-normal">AutoLens (Automobile eCommerce)</p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr class="my-20 border-neutral-200">
+
+      <!-- contact me  -->
+      <section>
+        <div class="flex max-sm:flex-col gap-5 justify-between items-start mb-20">
+          <div class="flex gap-3 items-center">
+            <div class="h-[3px] w-5 bg-neutral-700 max-sm:h-0.5 max-sm:w-[16px]"></div>
+            <p class="font-medium text-2xl text-neutral-700 max-sm:text-base">Contact Me</p>
+          </div>
+
+          <form class=" w-full flex flex-col gap-5">
+            <p class="text-neutral-700 font-normal text-2xl max-sm:text-base">Send a Message</p>
+            <input type="text" class="border border-neutral-300 rounded-md py-2 px-3 w-full" placeholder="Name">
+            <input type="email" class="border border-neutral-300 rounded-md py-2 px-3 w-full" placeholder="Email">
+            <textarea class="border border-neutral-300 rounded-md w-full p-3" rows="8" placeholder="Message"></textarea>
+            <button class="primary-btn rounded-md flex items-center justify-center gap-1.5">
+              Send<svg width="16" height="16" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.20308 1.04312C1.00481 0.954998 0.772341 1.0048 0.627577 1.16641C0.482813 1.32802 0.458794 1.56455 0.568117 1.75196L3.92115 7.50002L0.568117 13.2481C0.458794 13.4355 0.482813 13.672 0.627577 13.8336C0.772341 13.9952 1.00481 14.045 1.20308 13.9569L14.7031 7.95693C14.8836 7.87668 15 7.69762 15 7.50002C15 7.30243 14.8836 7.12337 14.7031 7.04312L1.20308 1.04312ZM4.84553 7.10002L2.21234 2.586L13.2689 7.50002L2.21234 12.414L4.84552 7.90002H9C9.22092 7.90002 9.4 7.72094 9.4 7.50002C9.4 7.27911 9.22092 7.10002 9 7.10002H4.84553Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></button>
+          </form>
+        </div>
+      </section>
     </main>
      
    </div>
 
    <footer>
-    <div class=" bg-neutral-50 border  py-10 px-20">
-     <div class="custom-container flex  justify-between items-start">
-      <div class="flex flex-col items-start gap-10">
+    <div class=" bg-neutral-50 py-10 px-20">
+     <div class="custom-container flex max-md:flex-col gap-10 justify-between items-start max-md:items-center">
+      <div class="flex flex-col items-start gap-10 max-md:items-center">
         <img class="" src="./images/logo.png" alt="">
 
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 max-md:items-center">
           <p class=" text-neutral-500 text-sm">Contact</p>
           <p class=" text-sm">mms-it.com</p>
           <p class=" text-sm">+959250152018</p>
         </div>
       </div>
 
-      <div class="flex gap-20">
-        <div class="flex flex-col gap-4">
+      <div class="flex gap-20 max-md:flex-col max-md:gap-10">
+        <div class="flex flex-col gap-4 max-md:items-center">
           <p class="text-neutral-500 text-sm">Pages</p>
           <p class=" text-sm">Home</p>
           <p class=" text-sm">Works</p>
           <p class=" text-sm">About</p>
           <p class=" text-sm">Contact</p>
         </div>
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 max-md:items-center">
           <p class="text-neutral-500 text-sm">Social</p>
           <p class=" text-sm">Instagram</p>
           <p class=" text-sm">Dribble</p>
